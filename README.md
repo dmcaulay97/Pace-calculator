@@ -1,4 +1,4 @@
-# double-D
+# Two People
 
 first commit
 
