@@ -1,27 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Running Calculator</title>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous" />
+		<link rel="stylesheet" href="styles.css" />
+		<title>Pace Calculator</title>
 	</head>
-	<body>
-		<form action="">
-			<label for="Time">Time</label>
-			<input type="text" name="Time" id="time" />
-			<label for="Distance">Distance</label>
-			<input type="text" name="Distance" id="distance" />
-			<label for="Velocity">Velocity</label>
-			<input type="text" name="Velocity" id="velocity" />
-			<button id="calculate">Calculate My Time</button>
-		</form>
 
-		<script
-			src="https://code.jquery.com/jquery-1.12.4.js"
-			integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU="
-			crossorigin="anonymous"
-		></script>
-		<script src="./Assets/script.js"></script>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 d-flex justify-content-center" id="time">
+					<div class="row">
+						<h1 class="col-12 text-center">Time</h1>
+						<div class="col-4">
+							<input type="number" id="timeHour" class="form-control" placeholder="Hour"
+								aria-label="Hour" />
+						</div>
+						<div class="col-4">
+							<input type="number" id="timeMin" class="form-control" placeholder="Min" aria-label="Min" />
+						</div>
+						<div class="col-4">
+							<input type="number" id="timeSec" class="form-control" placeholder="Sec" aria-label="Sec" />
+						</div>
+						<button type="button" id="timeButton" class="btn btn-primary">Calculate</button>
+					</div>
+				</div>
+				<div class="col-12 d-flex justify-content-center" id="distanceForm">
+					<div class="row">
+						<h1 class="col-12 text-center">Distance</h1>
+						<div class="col-8">
+							<input type="number" class="form-control col-8" id="distance" aria-describedby="distance"
+								placeholder="Distance" />
+						</div>
+						<div class="col-4">
+							<select class="form-select col-4" aria-label="Default select example">
+								<option selected value="miles">Miles</option>
+								<option value="kilometers">Kilometers</option>
+							</select>
+						</div>
+						<div class="col-12">
+							<select class="form-select" aria-label="Default select example">
+								<option selected value="Event">Event</option>
+								<option value="1-mile">1 mile</option>
+								<option value="2-mile">2 mile</option>
+								<option value="5k">5k</option>
+								<option value="marathon">Marthon, are u fucking crazy</option>
+							</select>
+						</div>
+
+						<button type="button" id="distanceButton" class="btn btn-primary">Calculate</button>
+					</div>
+				</div>
+				<div class="col-12 d-flex justify-content-center" id="pace">Pace</div>
+			</div>
+		</div>
 	</body>
+
 </html>
