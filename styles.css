@@ -21,6 +21,8 @@ body {
 	padding: .5em !important;
 } */
 
+/* .lh-unset vertically centers the "per" */
+
 .lh-unset {
 	margin: 0px;
 	line-height: unset;
