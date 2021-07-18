@@ -1,65 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
-
 	<head>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-			crossorigin="anonymous" />
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
 		<link rel="stylesheet" href="styles.css" />
 		<title>Pace Calculator</title>
 	</head>
 
 	<body>
-		<div class="container g-0">
-			<div class="row">
-				<div class="col-12 d-flex justify-content-center" id="time">
-					<div class="row">
-						<h1 class="col-12 text-center display-1">Time</h1>
-						<div class="col-4">
-							<input type="number" id="timeHour" class="form-control" placeholder="Hour"
-								aria-label="Hour" />
-						</div>
-						<div class="col-4">
-							<input type="number" id="timeMin" class="form-control" placeholder="Min" aria-label="Min" />
-						</div>
-						<div class="col-4">
-							<input type="number" id="timeSec" class="form-control" placeholder="Sec" aria-label="Sec" />
-						</div>
-						<button type="button" id="timeButton" class="btn btn-primary">Calculate</button>
-					</div>
+		<nav class="navbar navbar-dark bg-dark">
+			<div class="container-xxl">
+				<a href="index.html" class="navbar-brand justify-content-center">
+					<span class="fw-bold text-white text-wrap"> Ultimate Pace Calculator </span>
+				</a>
+				<!-- toggle button for mobile nav -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label='Toggle navigation"'>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<!-- navbar links -->
+				<div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
+					<ul class="navbar-nav">
+						<li class="nav-item">
+							<a class="nav-link" href="about">About</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="other-link">Other Links</a>
+						</li>
+					</ul>
 				</div>
-				<div class="col-12 d-flex justify-content-center" id="distanceForm">
-					<div class="row">
-						<h1 class="col-12 text-center">Distance</h1>
-						<div class="col-8">
-							<input type="number" class="form-control col-8" id="distance" aria-describedby="distance"
-								placeholder="Distance" />
-						</div>
-						<div class="col-4">
-							<select class="form-select col-4" aria-label="Default select example">
-								<option selected value="miles">Miles</option>
-								<option value="kilometers">Kilometers</option>
-							</select>
-						</div>
-						<div class="col-12">
-							<select class="form-select" aria-label="Default select example">
-								<option selected value="Event">Event</option>
-								<option value="1-mile">1 mile</option>
-								<option value="2-mile">2 mile</option>
-								<option value="5k">5k</option>
-								<option value="marathon">Marthon, are u fucking crazy</option>
-							</select>
-						</div>
-						
-						<button type="button" id="distanceButton" class="btn btn-primary col-12">Calculate</button>
-					</div>
-				</div>
-				<div class="col-12 d-flex justify-content-center" id="pace">Pace</div>
 			</div>
-		</div>
+		</nav>
+		<section id="calculator">
+			<div class="container g-0">
+				<div class="row">
+					<div class="col-12 d-flex justify-content-center" id="timeForm">
+						<div class="row text-center">
+							<h1 class="col-12 text-center display-1">Time</h1>
+							<div class="col-4">
+								<input type="number" id="timeHour" class="form-control" placeholder="Hour" aria-label="Hour" />
+							</div>
+							<div class="col-4">
+								<input type="number" id="timeMin" class="form-control" placeholder="Min" aria-label="Min" />
+							</div>
+							<div class="col-4">
+								<input type="number" id="timeSec" class="form-control" placeholder="Sec" aria-label="Sec" />
+							</div>
+							<div class="col-md-5">
+								<button type="button" id="timeButton" class="btn btn-primary col-12">Calculate</button>
+							</div>
+						</div>
+					</div>
+					<div class="col-12 d-flex justify-content-center" id="distanceForm">
+						<div class="row">
+							<h1 class="col-12 text-center display-1">Distance</h1>
+							<div class="col-8">
+								<input type="number" class="form-control col-8" id="distance" aria-describedby="distance" placeholder="Distance" />
+							</div>
+							<div class="col-4">
+								<select class="form-select col-4" aria-label="Default select example">
+									<option selected value="miles">Miles</option>
+									<option value="kilometers">Kilometers</option>
+								</select>
+							</div>
+							<div class="col-12">
+								<select class="form-select" aria-label="Default select example">
+									<option selected value="Event">Event</option>
+									<option value="1-mile">1 mile</option>
+									<option value="2-mile">2 mile</option>
+									<option value="5k">5k</option>
+									<option value="marathon">Marathon, are u fucking crazy</option>
+								</select>
+							</div>
+							<div class="col-md-5">
+								<button type="button" class="btn btn-primary col-12" id="distanceButton">Calculate</button>
+							</div>
+						</div>
+					</div>
+					<!-- <div class="col-12 d-flex justify-content-center display-1" id="pace">Pace</div> -->
+					<div class="col-12 d-flex justify-content-center" id="pace">
+						<div class="row text-center">
+							<h1 class="col-12 text-center display-1">Pace</h1>
+							<div class="col-4">
+								<input type="number" id="paceTimeHour" class="form-control" placeholder="Hour" aria-label="Hour" />
+							</div>
+							<div class="col-4">
+								<input type="number" id="paceTimeMin" class="form-control" placeholder="Min" aria-label="Min" />
+							</div>
+							<div class="col-4">
+								<input type="number" id="paceTimeSec" class="form-control" placeholder="Sec" aria-label="Sec" />
+							</div>
+							<div class="col-4">
+								<h2 class="fw-light lh-unset">Per</h2>
+							</div>
+							<div class="col-8">
+								<select class="form-select" aria-label="Default select example">
+									<option selected value="Distance">Distance</option>Event</option>
+									<option value="1-mile">1 mile</option>
+									<option value="2-mile">2 mile</option>
+									<option value="5k">5k</option>
+									<option value="marathon">Marathon, are u fucking crazy</option>
+								</select>
+							</div>
+							<div class="col-md-5">
+								<button type="button" id="paceButton" class="btn btn-primary col-12">Calculate</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 	</body>
-
 </html>
