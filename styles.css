@@ -1,0 +1,22 @@
+/* "Gutters are also responsive and customizable. Gutter classes are available across all breakpoints, with all the same sizes as our margin and padding spacing. Change horizontal gutters with .gx-* classes, vertical gutters with .gy-*, or all gutters with .g-* classes. .g-0 is also available to remove gutters."
+
+1. g-0 removes gutters (padding)
+2. this is inherited in child classes (pretty sure)
+3. you have to specify units for CSS to give a shit about what padding/margin you assign.
+4. #3 is wrong. I think.
+5. !important is cool. */
+
+
+/* this fucks shit up */
+/* *{
+	padding: 0px !important;
+} */
+
+
+/* .row>* {
+	padding: 0px !important;
+}
+
+body {
+	padding: .5em !important;
+} */
