@@ -6,12 +6,10 @@
 4. #3 is wrong. I think.
 5. !important is cool. */
 
-
 /* this fucks shit up */
 /* *{
 	padding: 0px !important;
 } */
-
 
 /* .row>* {
 	padding: 0px !important;
@@ -26,4 +24,175 @@ body {
 .lh-unset {
 	margin: 0px;
 	line-height: unset;
+}
+
+.colorful-gradient {
+	/* background-image: linear-gradient(to right, #3eccff, #18c20b, #e8ff4e, #d820b5) !important; */
+	/* background-color: rgb(43, 43, 43); */
+}
+
+.logo1 {
+	/* color:white !important;
+	text-shadow: 2px 2px 5px black;
+	background-image: linear-gradient(to right, #3eccff, #18c20b, #e8ff4e, #d820b5) !important;
+ 	 background: -webkit-linear-gradient(#3eccff, #d820b5); */
+	/* -webkit-background-clip: text; */
+	/* -webkit-text-fill-color: transparent; */
+
+	background-image: linear-gradient(
+		45deg,
+		#ca4246 16.666%,
+		#e16541 16.666%,
+		#e16541 33.333%,
+		#f18f43 33.333%,
+		#f18f43 50%,
+		#8b9862 50%,
+		#8b9862 66.666%,
+		#476098 66.666%,
+		#476098 83.333%,
+		#a7489b 83.333%
+	);
+
+	/* Set the background size and repeat properties. */
+	background-size: 100%;
+	background-repeat: repeat;
+
+	/* Use the text as a mask for the background. */
+	/* This will show the gradient as a text color rather than element bg. */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+	/* Animate the text when loading the element. */
+	/* This animates it on page load and when hovering out. */
+	animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+}
+.logo2 {
+	/* Create a conic gradient. */
+	/* Double percentages to avoid blur (#000 10%, #fff 10%, #fff 20%, ...). */
+	background: #ca4246;
+	background-color: #ca4246;
+	background: conic-gradient(
+		#ca4246 16.666%,
+		#e16541 16.666%,
+		#e16541 33.333%,
+		#f18f43 33.333%,
+		#f18f43 50%,
+		#8b9862 50%,
+		#8b9862 66.666%,
+		#476098 66.666%,
+		#476098 83.333%,
+		#a7489b 83.333%
+	);
+
+	/* Set thee background size and repeat properties. */
+	background-size: 57%;
+	background-repeat: repeat;
+
+	/* Use the text as a mask for the background. */
+	/* This will show the gradient as a text color rather than element bg. */
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+	/* Animate the text when loading the element. */
+	/* This animates it on page load and when hovering out. */
+	animation: rainbow-text-animation-rev 0.5s ease forwards;
+
+	cursor: pointer;
+}
+body{
+	min-height: 100vh;
+}
+
+.logo {
+	background: #33ffea;
+	background: -webkit-linear-gradient(to right, #33ffea 0%, #fff70a 50%, #ff33d6 100%);
+	background: -moz-linear-gradient(to right, #33ffea 0%, #fff70a 50%, #ff33d6 100%);
+	background: linear-gradient(to right, #33ffea 0%, #fff70a 50%, #ff33d6 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.gradient-btn-blue {
+	background: #33ffea;
+	background: -webkit-linear-gradient(to right, #33ffea 0%, #0a33ff 100%);
+	background: -moz-linear-gradient(to right, #33ffea 0%, #0a33ff 100%);
+	background: linear-gradient(to right, #33ffea 0%, #0a33ff 100%);
+}
+
+.gradient-btn-yellow {
+	background: #f4fc05;
+	background: -webkit-linear-gradient(to right, #f4fc05 0%, #f8b500 100%);
+	background: -moz-linear-gradient(to right, #f4fc05 0%, #f8b500 100%);
+	background: linear-gradient(to right, #f4fc05 0%, #f8b500 100%);
+}
+
+.gradient-btn-pink {
+	background: #fc92fc;
+	background: -webkit-linear-gradient(to right, #fc92fc 0%, #ea25f8 100%);
+	background: -moz-linear-gradient(to right, #fc92fc 0%, #ea25f8 100%);
+	background: linear-gradient(to right, #fc92fc 0%, #ea25f8 100%);
+}
+.blue {
+	color: #007bee;
+}
+
+.yellow {
+	color: #fff70a;
+}
+
+.light-grey {
+	background: linear-gradient(to bottom, #0e2934, #00011c);
+}
+.glow1 {
+	font-size: 2em;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+	-moz-animation: glow 1s ease-in-out infinite alternate;
+	animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+	from {
+		text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #3d00e6, 0 0 40px #3d00e6, 0 0 50px #3200e6, 0 0 60px #1f00e6, 0 0 70px #3d00e6;
+	}
+	to {
+		text-shadow: 0 0 20px #fff, 0 0 30px #4dafff, 0 0 40px #4dcdff, 0 0 50px #4de4ff, 0 0 60px #4df3ff, 0 0 70px #4dc7ff, 0 0 80px #4d5cff;
+	}
+}
+
+.glow-pink {
+	font-size: 2em;
+	color: #fff;
+	text-align: center;
+	-webkit-animation: glow-pink 1s ease-in-out infinite alternate;
+	-moz-animation: glow-pink 1s ease-in-out infinite alternate;
+	animation: glow-pink 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow-pink {
+	from {
+		text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+	}
+	to {
+		text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+	}
+}
+
+.glow-yellow {
+	font-size: 2em;
+	color: #fff;
+	text-align: center;
+	-webkit-animation: glow-yellow 1s ease-in-out infinite alternate;
+	-moz-animation: glow-yellow 1s ease-in-out infinite alternate;
+	animation: glow-yellow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow-yellow {
+	from {
+		text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #c4e600, 0 0 40px #bce600, 0 0 50px #e6e200, 0 0 60px #bce600, 0 0 70px #e6cf00;
+	}
+	to {
+		text-shadow: 0 0 20px #fff, 0 0 30px #fcff4d, 0 0 40px #fcff4d, 0 0 50px #fcff4d, 0 0 60px #fffc4d, 0 0 70px #ffe44d, 0 0 80px #ffd54d;
+	}
 }
