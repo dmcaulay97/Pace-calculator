@@ -13,4 +13,6 @@ Step 1: Copy this: https://a.atmos.washington.edu/~ovens/racepace.html
 
 We're using https://getbootstrap.com/docs/3.4/css/
 
+that's a lie. we're using bootstrap 5.
+
 

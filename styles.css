@@ -26,10 +26,10 @@ body {
 	line-height: unset;
 }
 
-.colorful-gradient {
-	/* background-image: linear-gradient(to right, #3eccff, #18c20b, #e8ff4e, #d820b5) !important; */
-	/* background-color: rgb(43, 43, 43); */
-}
+/* .colorful-gradient {
+	background-image: linear-gradient(to right, #3eccff, #18c20b, #e8ff4e, #d820b5) !important;
+	background-color: rgb(43, 43, 43);
+} */
 
 .logo1 {
 	/* color:white !important;
@@ -99,7 +99,7 @@ body {
 
 	cursor: pointer;
 }
-body{
+body {
 	min-height: 100vh;
 }
 
@@ -140,10 +140,13 @@ body{
 	color: #fff70a;
 }
 
+.pink {
+	color: rgb(255, 0, 128);
+}
 .light-grey {
 	background: linear-gradient(to bottom, #0e2934, #00011c);
 }
-.glow1 {
+/* .glow1 {
 	font-size: 2em;
 	color: rgb(255, 255, 255);
 	text-align: center;
@@ -195,4 +198,4 @@ body{
 	to {
 		text-shadow: 0 0 20px #fff, 0 0 30px #fcff4d, 0 0 40px #fcff4d, 0 0 50px #fcff4d, 0 0 60px #fffc4d, 0 0 70px #ffe44d, 0 0 80px #ffd54d;
 	}
-}
+} */
