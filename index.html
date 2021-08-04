@@ -61,7 +61,7 @@
 								<input type="number" id="timeSec" class="form-control" placeholder="Sec" aria-label="Sec" />
 							</div>
 							<div class="col-md-5 pb-4">
-								<button type="button" id="timeButton" class="btn btn-primary col-12 gradient-btn-blue">Calculate</button>
+								<button type="button" id="timeBtn" class="btn btn-primary col-12 gradient-btn-blue">Calculate</button>
 							</div>
 						</div>
 					</div>
@@ -87,7 +87,7 @@
 								</select>
 							</div>
 							<div class="col-md-5 pb-4">
-								<button type="button" class="btn col-12 gradient-btn-yellow" id="distanceButton">Calculate</button>
+								<button type="button" class="btn col-12 gradient-btn-yellow" id="distanceBtn">Calculate</button>
 							</div>
 						</div>
 					</div>
@@ -108,7 +108,7 @@
 								<h2 class="fw-light text-secondary lh-unset">Per</h2>
 							</div>
 							<div class="col-8 pb-3">
-								<select class="form-select" id="paceDistance" aria-label="Default select example">
+								<select class="form-select" id="paceUnits" aria-label="Default select example">
 									<option selected value="miles">Mile</option>
 									<option value="kilometer">Kilometer</option>
 									<option value="800m">800m</option>
@@ -135,15 +135,17 @@
 								</ul>
 							</div> -->
 							<div class="col-md-5">
+								<button type="button" id="paceBtn" class="btn gradient-btn-pink col-12">Calculate</button>
+
 								<button
 									type="button"
-									id="paceButton"
-									class="btn gradient-btn-pink col-12"
+									id="splitsBtn"
+									class="btn gradient-btn-pink col-12 my-3"
 									data-bs-toggle="offcanvas"
 									data-bs-target="#offcanvasExample"
 									aria-controls="offcanvasExample"
 								>
-									Calculate
+									Gimme Da Splits.btn
 								</button>
 							</div>
 						</div>
@@ -157,6 +159,8 @@
 		<button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
 			Button with data-bs-target
 		</button> -->
+
+		<!-- this is the pretty slide out modal for splits -->
 
 		<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
 			<div class="offcanvas-header">
