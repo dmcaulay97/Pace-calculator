@@ -4,8 +4,10 @@
 const paceDistanceToMeters = (paceDistance, units) => {
 	if (units == 'miles') {
 		return paceDistance / 1609;
-	} else {
+	} else if (units == 'kilometer') {
 		return paceDistance / 1000;
+	} else {
+		return paceDistance / parseInt(units);
 	}
 };
 const distanceToMeters = (distance, units) => {
@@ -34,8 +36,10 @@ const backInUnits = (meters, units) => {
 	if (units == 'miles') {
 		return meters / 1609;
 		// lots of else ifs for other distances like 100m, 200m, 400m, etc
-	} else {
+	} else if (units == 'kilometer') {
 		return meters / 1000;
+	} else {
+		return meters / parseInt(units);
 	}
 };
 
@@ -98,6 +102,13 @@ const calculatePace = () => {
 	$('#paceSec').val(answer[2]);
 };
 
+const eventFill = () => {
+	const value = $('#eventSelect').val().split('-');
+	console.log(value);
+	$('#distance').val(value[0]);
+	console.log($('#distanceUnits').children())
+}
+
 // EVENT LISTENERS
 
 const timeBtn = $('#timeBtn');
@@ -111,3 +122,6 @@ distanceBtn.on('click', calculateDistance);
 const paceBtn = $('#paceBtn');
 paceBtn.on('click', calculatePace);
 // console.log(distanceBtn);
+
+const eventSelect = $('#eventSelect');
+eventSelect.on('change', eventFill);
