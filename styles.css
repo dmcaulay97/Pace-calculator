@@ -30,7 +30,7 @@ body {
 	line-height: unset;
 }
 
-/* .colorful-gradient {
+/* .	orful-gradient {
 	background-image: linear-gradient(to right, #3eccff, #18c20b, #e8ff4e, #d820b5) !important;
 	background-color: rgb(43, 43, 43);
 } */
@@ -43,19 +43,7 @@ body {
 	/* -webkit-background-clip: text; */
 	/* -webkit-text-fill-color: transparent; */
 
-	background-image: linear-gradient(
-		45deg,
-		#ca4246 16.666%,
-		#e16541 16.666%,
-		#e16541 33.333%,
-		#f18f43 33.333%,
-		#f18f43 50%,
-		#8b9862 50%,
-		#8b9862 66.666%,
-		#476098 66.666%,
-		#476098 83.333%,
-		#a7489b 83.333%
-	);
+	background-image: linear-gradient(45deg, #ca4246 16.666%, #476098 66.666%, #476098 83.333%, #a7489b 83.333%);
 
 	/* Set the background size and repeat properties. */
 	background-size: 100%;
@@ -105,50 +93,106 @@ body {
 }
 body {
 	min-height: 100vh;
+	background-image: url('https://64.media.tumblr.com/efa8733072951d78bd9c4761a6db0c28/tumblr_ogkb38XhOD1qlhvfoo1_500.gifv');
+	background-repeat: no-repeat;
+	background-size: cover;
+	/* background: linear-gradient(0deg, rgba(131, 58, 180, 1) 0%, rgba(242, 136, 235, 1) 50%, rgba(242, 173, 148, 1) 100%); */
+	/* background: linear-gradient(0deg, rgba(128, 145, 241, 1) 0%, rgba(242, 136, 235, 1) 31%, rgba(242, 173, 148, 1) 100%); */
+}
+
+#timeForm {
+	background-color: #ffc198cb;
+	/* box-shadow: 0 0 10px rgba(0, 0, 0); */
+}
+
+#distanceForm {
+	background-color: #f288ebd0;
+	/* box-shadow: 0 0 10px rgba(0, 0, 0); */
+}
+
+#paceForm {
+	background-color: #8392f0c9;
+	/* box-shadow: 0 0 10px rgba(0, 0, 0); */
 }
 
 .logo {
-	background: #33ffea;
-	background: -webkit-linear-gradient(to right, #33ffea 0%, #fff70a 50%, #ff33d6 100%);
+	/* background: #33ffea; */
+	/* background: -webkit-linear-gradient(to right, #33ffea 0%, #fff70a 50%, #ff33d6 100%);
 	background: -moz-linear-gradient(to right, #33ffea 0%, #fff70a 50%, #ff33d6 100%);
-	background: linear-gradient(to right, #33ffea 0%, #fff70a 50%, #ff33d6 100%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+	background: linear-gradient(to right, #33ffea 0%, #fff70a 50%, #ff33d6 100%); */
+	color: #f0f1c9 !important;
+	text-shadow: 1px 1px 2px rgb(81, 0, 131);
 }
 
 .gradient-btn-blue {
 	background: #33ffea;
 	background: -webkit-linear-gradient(to right, #33ffea 0%, #0a33ff 100%);
 	background: -moz-linear-gradient(to right, #33ffea 0%, #0a33ff 100%);
-	background: linear-gradient(to right, #33ffea 0%, #0a33ff 100%);
+	background: linear-gradient(to right, #33ffea 0%, #99f9ff 100%);
+	color: black;
+	/* text-shadow: 1px 1px 2px black; */
 }
 
 .gradient-btn-yellow {
 	background: #f4fc05;
+	background: -webkit-linear-gradient(to right, #a8f288 0%, #a8f288 100%);
+	background: -moz-linear-gradient(to right, #a8f288 0%, #a8f288 100%);
+	background: linear-gradient(to right, #a8f288 0%, #a8f288 100%);
+	/* background: #f4fc05;
 	background: -webkit-linear-gradient(to right, #f4fc05 0%, #f8b500 100%);
 	background: -moz-linear-gradient(to right, #f4fc05 0%, #f8b500 100%);
-	background: linear-gradient(to right, #f4fc05 0%, #f8b500 100%);
+	background: linear-gradient(to right, #f4fc05 0%, #f8b500 100%); */
 }
 
 .gradient-btn-pink {
 	background: #fc92fc;
-	background: -webkit-linear-gradient(to right, #fc92fc 0%, #ea25f8 100%);
-	background: -moz-linear-gradient(to right, #fc92fc 0%, #ea25f8 100%);
-	background: linear-gradient(to right, #fc92fc 0%, #ea25f8 100%);
+	background: -webkit-linear-gradient(to right, #ffc198 0%, #ffc198 100%);
+	background: -moz-linear-gradient(to right, #ffc198 0%, #ffc198 100%);
+	background: linear-gradient(to right, #ffc198 0%, #ffc198 100%);
 }
+
+.gradient-btn-byp {
+	background: linear-gradient(to right, #33ffea 0%, #fff70a 50%, #ff33d6 100%);
+}
+
 .blue {
 	color: #007bee;
 }
 
 .yellow {
-	color: #fff70a;
+	color: #a8f288;
 }
 
 .pink {
-	color: rgb(255, 0, 128);
+	color: #ffc298;
 }
 .light-grey {
-	background: linear-gradient(to bottom, #0e2934, #00011c);
+	background: linear-gradient(to bottom, #8ad7f5, #31aedf83);
+	/* background: linear-gradient(to bottom, #0e2934, #00011c); */
+}
+
+/* Test styling alternating colors */
+
+/* Calculator Styling for Splits Button */
+#calculator {
+	/* background-color: #ffffff22; */
+}
+
+#splits-btn-container {
+	bottom: 0px;
+	/* height: 50px; */
+	/* background-image: linear-gradient(to right, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
+	/* background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12); */
+}
+
+#splitsBtn {
+	/* background: linear-gradient(to bottom, #befcc6 0%, #56fcb7 50%, #04fe4b 51%, #97fbc1 100%); */
+	background: linear-gradient(to right, #33ffea 0%, #fff70a 50%, #ff33d6 100%);
+
+	width: 100%;
+	/* height: 50px; coverd by bootstrap "btn-lg" */
+	text-align: center;
+	text-justify: unset;
 }
 /* .glow1 {
 	font-size: 2em;

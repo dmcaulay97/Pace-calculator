@@ -14,8 +14,8 @@
 		<title>Pace Calculator</title>
 	</head>
 
-	<body class="light-grey">
-		<nav class="navbar shadow navbar-dark mb-4 colorful-gradient">
+	<body class="body">
+		<nav class="navbar shadow navbar-light light-grey">
 			<div class="container-xxl">
 				<a href="index.html" class="navbar-brand justify-content-center">
 					<span class="fw-bold text-dark text-wrap logo"> Ultimate Pace Calculator </span>
@@ -46,9 +46,9 @@
 			</div>
 		</nav>
 		<section class="" id="calculator">
-			<div class="container g-3">
+			<div class="container g-3 py-4">
 				<div class="row">
-					<div class="col-12 d-flex justify-content-center" id="timeForm">
+					<div class="col-12 d-flex justify-content-center mb-4 rounded-3 shadow" id="timeForm">
 						<div class="row text-center col-12">
 							<h1 class="col-12 text-center display-1 blue glow1">Time</h1>
 							<div class="col-4 pb-3">
@@ -61,11 +61,11 @@
 								<input type="number" id="timeSec" class="form-control" placeholder="Sec" aria-label="Sec" />
 							</div>
 							<div class="col-md-5 pb-4">
-								<button type="button" id="timeBtn" class="btn btn-primary col-12 gradient-btn-blue">Calculate</button>
+								<button type="button" id="timeBtn" class="btn btn-primary col-12 gradient-btn-blue border-0">Calculate</button>
 							</div>
 						</div>
 					</div>
-					<div class="col-12 d-flex justify-content-center" id="distanceForm">
+					<div class="col-12 d-flex justify-content-center mb-4 rounded-3 shadow" id="distanceForm">
 						<div class="row col-12">
 							<h1 class="col-12 text-center display-1 yellow glow-yellow">Distance</h1>
 							<div class="col-8 pb-3">
@@ -77,9 +77,12 @@
 									<option value="kilometers">Kilometers</option>
 								</select>
 							</div>
-							<div class="col-12 pb-3">
+							<div class="col-4 pb-3 text-center">
+								<h2 class="fw-light text-secondary lh-unset">or</h2>
+							</div>
+							<div class="col-8 pb-3">
 								<select class="form-select" aria-label="Default select example">
-									<option selected value="Event">Event</option>
+									<option selected value="Event">Choose Event</option>
 									<option value="1-mile">1 mile</option>
 									<option value="2-mile">2 mile</option>
 									<option value="5k">5k</option>
@@ -87,12 +90,12 @@
 								</select>
 							</div>
 							<div class="col-md-5 pb-4">
-								<button type="button" class="btn col-12 gradient-btn-yellow" id="distanceBtn">Calculate</button>
+								<button type="button" class="btn col-12 gradient-btn-yellow border-0" id="distanceBtn">Calculate</button>
 							</div>
 						</div>
 					</div>
 					<!-- <div class="col-12 d-flex justify-content-center display-1" id="pace">Pace</div> -->
-					<div class="col-12 d-flex justify-content-center" id="pace">
+					<div class="col-12 d-flex justify-content-center mb-4 rounded-3 shadow" id="paceForm">
 						<div class="row text-center col-12">
 							<h1 class="col-12 text-center display-1 glow-pink pink">Pace</h1>
 							<div class="col-4 pb-3">
@@ -134,25 +137,25 @@
 									<li><a href="#" class="dropdown-item">100m</a></li>
 								</ul>
 							</div> -->
-							<div class="col-md-5">
-								<button type="button" id="paceBtn" class="btn gradient-btn-pink col-12">Calculate</button>
-
-								<button
-									type="button"
-									id="splitsBtn"
-									class="btn gradient-btn-pink col-12 my-3"
-									data-bs-toggle="offcanvas"
-									data-bs-target="#offcanvasExample"
-									aria-controls="offcanvasExample"
-								>
-									Gimme Da Splits.btn
-								</button>
+							<div class="col-md-5 pb-4">
+								<button type="button" id="paceBtn" class="btn gradient-btn-pink col-12 border-0">Calculate</button>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+		<section class="container-fluid p-0 d-flex justify-content-center">
+			<div class="container-md p-0 d-grid gap-2" id="splits-btn-container">
+				<button type="button" id="splitsBtn" class="btn border-0 col-12 btn-lg" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+					Calculate Splits
+				</button>
+				<button type="button" id="resetBtn" class="btn border-0 col-12 btn-secondary btn-lg mb-4">Reset</button>
+			</div>
+		</section>
+		<div class="d-flex justify-content-center container-xxl" id="splits-col">
+			<div class="col-12 px-3 d-flex justify-content-center"></div>
+		</div>
 		<!-- <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
 			Link with href
 		</a>
