@@ -91,6 +91,21 @@ body {
 
 	cursor: pointer;
 }
+.logo {
+	/* background: #33ffea; */
+	/* background: -webkit-linear-gradient(to right, #33ffea 0%, #fff70a 50%, #ff33d6 100%);
+	background: -moz-linear-gradient(to right, #33ffea 0%, #fff70a 50%, #ff33d6 100%);
+	background: linear-gradient(to right, #33ffea 0%, #fff70a 50%, #ff33d6 100%); */
+	color: #f0f1c9 !important;
+	text-shadow: 1px 1px 2px rgb(81, 0, 131);
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.vaporwave-gradient {
+	background: rgb(39, 142, 71);
+	background: linear-gradient(0deg, rgba(39, 142, 71, 1) 0%, rgba(54, 122, 242, 1) 9%, rgba(231, 78, 253, 1) 56%, rgba(201, 60, 156, 1) 100%);
+}
+
 body {
 	min-height: 100vh;
 	background-image: url('https://64.media.tumblr.com/efa8733072951d78bd9c4761a6db0c28/tumblr_ogkb38XhOD1qlhvfoo1_500.gifv');
@@ -115,20 +130,11 @@ body {
 	/* box-shadow: 0 0 10px rgba(0, 0, 0); */
 }
 
-.logo {
-	/* background: #33ffea; */
-	/* background: -webkit-linear-gradient(to right, #33ffea 0%, #fff70a 50%, #ff33d6 100%);
-	background: -moz-linear-gradient(to right, #33ffea 0%, #fff70a 50%, #ff33d6 100%);
-	background: linear-gradient(to right, #33ffea 0%, #fff70a 50%, #ff33d6 100%); */
-	color: #f0f1c9 !important;
-	text-shadow: 1px 1px 2px rgb(81, 0, 131);
-}
-
 .gradient-btn-blue {
-	background: #33ffea;
-	background: -webkit-linear-gradient(to right, #33ffea 0%, #0a33ff 100%);
-	background: -moz-linear-gradient(to right, #33ffea 0%, #0a33ff 100%);
-	background: linear-gradient(to right, #33ffea 0%, #99f9ff 100%);
+	background: #8d95f3;
+	background: -webkit-linear-gradient(to right, #8d95f3 0%, #8d95f3 100%);
+	background: -moz-linear-gradient(to right, #8d95f3 0%, #8d95f3 100%);
+	background: linear-gradient(to right, #8d95f3 0%, #8d95f3 100%);
 	color: black;
 	/* text-shadow: 1px 1px 2px black; */
 }
@@ -167,8 +173,31 @@ body {
 	color: #ffc298;
 }
 .light-grey {
-	background: linear-gradient(to bottom, #8ad7f5, #31aedf83);
+	background: linear-gradient(to bottom, rgba(230, 78, 253, 0.39), #7dfbf79e);
+
 	/* background: linear-gradient(to bottom, #0e2934, #00011c); */
+}
+
+.running-guy {
+	position: fixed;
+	bottom: 0px;
+	left: -50px;
+	z-index: 10;
+	mix-blend-mode: normal;
+	height: 25%;
+	animation-duration: 7s;
+	animation-name: slidein;
+	animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+	from {
+		margin-left: -30%;
+	}
+
+	to {
+		margin-left: 90%;
+	}
 }
 
 /* Test styling alternating colors */
