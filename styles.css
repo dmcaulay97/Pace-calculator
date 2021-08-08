@@ -96,9 +96,10 @@ body {
 	/* background: -webkit-linear-gradient(to right, #33ffea 0%, #fff70a 50%, #ff33d6 100%);
 	background: -moz-linear-gradient(to right, #33ffea 0%, #fff70a 50%, #ff33d6 100%);
 	background: linear-gradient(to right, #33ffea 0%, #fff70a 50%, #ff33d6 100%); */
+	font-size: 0.8em;
 	color: #f0f1c9 !important;
 	text-shadow: 1px 1px 2px rgb(81, 0, 131);
-	font-family: 'Times New Roman', Times, serif;
+	font-family: 'sf_alien_encountersregular', Times, serif;
 }
 
 .vaporwave-gradient {
@@ -117,16 +118,21 @@ body {
 
 #timeForm {
 	background-color: #ffc198cb;
+	font-family: 'sf_alien_encountersregular', Times, serif;
 	/* box-shadow: 0 0 10px rgba(0, 0, 0); */
 }
 
 #distanceForm {
 	background-color: #f288ebd0;
+	font-family: 'sf_alien_encountersregular', Times, serif;
+
 	/* box-shadow: 0 0 10px rgba(0, 0, 0); */
 }
 
 #paceForm {
 	background-color: #8392f0c9;
+	font-family: 'sf_alien_encountersregular', Times, serif;
+
 	/* box-shadow: 0 0 10px rgba(0, 0, 0); */
 }
 
