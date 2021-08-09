@@ -104,20 +104,17 @@
 }
 
 body {
-	/* min-height: 100vh; */
-	/* background-image: linear-gradient(to bottom, #0fe5f43a, rgba(255, 255, 255, 0)), url('https://data.whicdn.com/images/244417240/original.gif'); */
-	/* background-image: linear-gradient(to bottom, #0fe5f400, rgba(255, 255, 255, 0)), url('https://wallpaperaccess.com/full/2342786.png'); */
+	min-height: 100vh;
 	/* background-image: linear-gradient(to bottom, #0fe5f400, rgba(255, 255, 255, 0)), url('https://i.pinimg.com/originals/9f/92/6c/9f926c8c220127d81c8ba6897aa8d5db.gif'); */
-	/* background-image: linear-gradient(to bottom, #0fe5f400, rgba(255, 255, 255, 0)), url('https://i.pinimg.com/originals/75/2a/30/752a309d15fac0b23d006d9b568aff0d.gif'); */
+	background-image: linear-gradient(to bottom, #0fe5f400, rgba(255, 255, 255, 0)), url('https://i.pinimg.com/originals/75/2a/30/752a309d15fac0b23d006d9b568aff0d.gif');
 	/* background-image: linear-gradient(to bottom, #0fe5f400, rgba(255, 255, 255, 0)), url('https://i.pinimg.com/originals/62/21/f2/6221f27668e192ce1d7eb19a76dce88d.gif'); */
-	/* background-image: linear-gradient(to bottom, #0fe5f400, rgba(255, 255, 255, 0)), url('https://i.pinimg.com/originals/05/10/f4/0510f4e596283c0d961e4338565a93f3.gif');
-	background-blend-mode: normal;
+	/* background-image: linear-gradient(to bottom, #0fe5f400, rgba(255, 255, 255, 0)), url('https://i.pinimg.com/originals/05/10/f4/0510f4e596283c0d961e4338565a93f3.gif'); */
 	background-repeat: no-repeat;
 	background-size: cover;
-	min-width: 100%;
-	min-height: 100%;
-	background-position: center; */
-	/* background-attachment: fixed; */
+	/* min-width: 100%;
+	min-height: 100%; */
+	background-position: center;
+	/* background-attachment: fixed;
 	/* background-position-y:; */
 	/* background: linear-gradient(0deg, rgba(131, 58, 180, 1) 0%, rgba(242, 136, 235, 1) 50%, rgba(242, 173, 148, 1) 100%); */
 	/* background: linear-gradient(0deg, rgba(128, 145, 241, 1) 0%, rgba(242, 136, 235, 1) 31%, rgba(242, 173, 148, 1) 100%); */
@@ -259,7 +256,7 @@ body {
 }
 
 .running-guy {
-	visibility: hidden;
+	visibility: normal;
 	position: fixed;
 	bottom: 0px;
 	left: -50px;
