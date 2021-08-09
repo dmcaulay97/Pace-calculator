@@ -106,7 +106,11 @@ const eventFill = () => {
 	const value = $('#eventSelect').val().split('-');
 	console.log(value);
 	$('#distance').val(value[0]);
-	console.log($('#distanceUnits').children())
+	if (value[1] == 'mile') {
+		$("#distanceUnits").val("miles")
+	} else {
+		$("#distanceUnits").val("kilometer")
+	}
 }
 
 // EVENT LISTENERS
