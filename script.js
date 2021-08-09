@@ -144,7 +144,7 @@ const eventFill = () => {
 	if (value[1] == 'mile') {
 		$('#distanceUnits').val('miles');
 	} else {
-		$('#distanceUnits').val('kilometer');
+		$('#distanceUnits').val('kilometers');
 	}
 };
 
