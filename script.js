@@ -94,12 +94,47 @@ const calculatePace = () => {
 	//grab the pace units
 	const pUnits = $('#paceUnits').val();
 	// do the maths
-	const answer = backInTime(totalTime(tHour, tMin, tSec) / backInUnits(d, pUnits));
+	const totalSeconds = totalTime(tHour, tMin, tSec);
+	const answer = backInTime(totalSeconds / backInUnits(d, pUnits));
 	//test console log answer
 	console.log(answer);
 	$('#paceHour').val(answer[0]);
 	$('#paceMin').val(answer[1]);
 	$('#paceSec').val(answer[2]);
+	return { answer, d, dUnits, pUnits, totalSeconds };
+};
+
+const renderSplits = () => {
+	$('#table-body').empty();
+	const { answer, d, dUnits, pUnits, totalSeconds } = calculatePace();
+	//return answer, d, dUnits, pUnits;
+	console.log(answer, pUnits);
+	// total distance divided by pUnits
+	if (pUnits == 'miles' || pUnits == 'kilometer') {
+		let numberOfSplits = d / distanceToMeters(1, pUnits);
+		console.log(numberOfSplits);
+		//create numberofSplits rows in a table
+		for (let i = 0; i < Math.ceil(numberOfSplits); i++) {
+			//create row #i
+			const row = document.createElement('tr');
+			const distanceCell = document.createElement('td');
+			const splitCell = document.createElement('td');
+			let splitTime;
+			if (i != Math.ceil(numberOfSplits) - 1) {
+				distanceCell.textContent = i + 1;
+				splitTime = backInTime(totalTime(answer[0], answer[1], answer[2]) * (i + 1));
+			} else {
+				console.log(pUnits);
+				distanceCell.textContent = backInUnits(d, pUnits).toFixed(2);
+				splitTime = backInTime(totalSeconds);
+			}
+			splitCell.textContent = `${splitTime[0]}:${splitTime[1]}:${splitTime[2]}`;
+			// console.log(splitCell.textContent);
+			row.appendChild(distanceCell);
+			row.appendChild(splitCell);
+			$('#table-body').append(row);
+		}
+	}
 };
 
 const eventFill = () => {
@@ -107,11 +142,11 @@ const eventFill = () => {
 	console.log(value);
 	$('#distance').val(value[0]);
 	if (value[1] == 'mile') {
-		$("#distanceUnits").val("miles")
+		$('#distanceUnits').val('miles');
 	} else {
-		$("#distanceUnits").val("kilometer")
+		$('#distanceUnits').val('kilometer');
 	}
-}
+};
 
 // EVENT LISTENERS
 
@@ -129,3 +164,8 @@ paceBtn.on('click', calculatePace);
 
 const eventSelect = $('#eventSelect');
 eventSelect.on('change', eventFill);
+
+const splitsBtn = $('#splitsBtn');
+splitsBtn.on('click', renderSplits);
+
+// RENDER SPLITS

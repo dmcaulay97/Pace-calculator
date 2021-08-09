@@ -106,7 +106,7 @@
 body {
 	min-height: 100vh;
 	/* background-image: linear-gradient(to bottom, #0fe5f400, rgba(255, 255, 255, 0)), url('https://i.pinimg.com/originals/9f/92/6c/9f926c8c220127d81c8ba6897aa8d5db.gif'); */
-	background-image: linear-gradient(to bottom, #0fe5f400, rgba(255, 255, 255, 0)), url('https://i.pinimg.com/originals/75/2a/30/752a309d15fac0b23d006d9b568aff0d.gif');
+	background-image: linear-gradient(to bottom, #000000, rgb(0, 0, 0)), url('https://i.pinimg.com/originals/75/2a/30/752a309d15fac0b23d006d9b568aff0d.gif');
 	/* background-image: linear-gradient(to bottom, #0fe5f400, rgba(255, 255, 255, 0)), url('https://i.pinimg.com/originals/62/21/f2/6221f27668e192ce1d7eb19a76dce88d.gif'); */
 	/* background-image: linear-gradient(to bottom, #0fe5f400, rgba(255, 255, 255, 0)), url('https://i.pinimg.com/originals/05/10/f4/0510f4e596283c0d961e4338565a93f3.gif'); */
 	background-repeat: no-repeat;
@@ -256,7 +256,7 @@ body {
 }
 
 .running-guy {
-	visibility: normal;
+	visibility: hidden;
 	position: fixed;
 	bottom: 0px;
 	left: -50px;
