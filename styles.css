@@ -54,23 +54,22 @@
 	/* This animates it on page load and when hovering out. */
 	animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
 }
+
 .logo2 {
 	/* Create a conic gradient. */
 	/* Double percentages to avoid blur (#000 10%, #fff 10%, #fff 20%, ...). */
 	background: #ca4246;
 	background-color: #ca4246;
-	background: conic-gradient(
-		#ca4246 16.666%,
-		#e16541 16.666%,
-		#e16541 33.333%,
-		#f18f43 33.333%,
-		#f18f43 50%,
-		#8b9862 50%,
-		#8b9862 66.666%,
-		#476098 66.666%,
-		#476098 83.333%,
-		#a7489b 83.333%
-	);
+	background: conic-gradient(#ca4246 16.666%,
+			#e16541 16.666%,
+			#e16541 33.333%,
+			#f18f43 33.333%,
+			#f18f43 50%,
+			#8b9862 50%,
+			#8b9862 66.666%,
+			#476098 66.666%,
+			#476098 83.333%,
+			#a7489b 83.333%);
 
 	/* Set thee background size and repeat properties. */
 	background-size: 57%;
@@ -87,6 +86,7 @@
 
 	cursor: pointer;
 }
+
 .logo {
 	/* background: #33ffea; */
 	/* background: -webkit-linear-gradient(to right, #33ffea 0%, #fff70a 50%, #ff33d6 100%);
@@ -104,10 +104,13 @@
 }
 
 .canyon-purple {
-	background-color: #716eb200!important;
+	background-color: #716eb200 !important;
 }
 
 body {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 	min-height: 100vh;
 	/* background-image: linear-gradient(to bottom, #0fe5f400, rgba(255, 255, 255, 0)), url('https://i.pinimg.com/originals/9f/92/6c/9f926c8c220127d81c8ba6897aa8d5db.gif'); */
 	background-image: linear-gradient(to bottom, #00000083, rgb(0, 0, 0)), url('https://data.1freewallpapers.com/detail/canyon-caves-relief-art.jpg');
@@ -221,6 +224,7 @@ body {
 	background: -moz-linear-gradient(to right, #ffc198 0%, #ffc198 100%);
 	background: linear-gradient(to right, #ffc198 0%, #ffc198 100%);
 }
+
 .gradient-btn-bubblegumpink {
 	background: pink;
 	background: -webkit-linear-gradient(to right, pink 0%, pink 100%);
@@ -248,15 +252,19 @@ body {
 .green {
 	color: #0ae0b3;
 }
+
 .bubblegumpink {
 	color: pink;
 }
+
 .teal {
 	color: #71eff5;
 }
+
 .purple {
 	color: #f69def;
 }
+
 .light-grey {
 	background: linear-gradient(to bottom, rgba(105, 0, 121, 0.541), rgba(49, 0, 63, 0.637));
 
@@ -291,6 +299,7 @@ body {
 /* Calculator Styling for Splits Button */
 #calculator {
 	/* background-color: #ffffff22; */
+	max-width: 600px;
 }
 
 #splits-btn-container {
@@ -310,6 +319,7 @@ body {
 	text-align: center;
 	text-justify: unset;
 }
+
 /* .glow1 {
 	font-size: 2em;
 	color: rgb(255, 255, 255);
