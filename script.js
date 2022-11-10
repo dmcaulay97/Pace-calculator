@@ -26,6 +26,7 @@ const backInTime = (totalSec) => {
 	const hour = Math.floor(totalSec / 3600);
 	const min = Math.floor((totalSec - hour * 3600) / 60);
 	let sec = totalSec - hour * 3600 - min * 60;
+	console.log(sec)
 	sec = sec.toFixed(2);
 	console.log(hour, min, sec);
 
@@ -125,10 +126,27 @@ const renderSplits = () => {
 				splitTime = backInTime(totalTime(answer[0], answer[1], answer[2]) * (i + 1));
 			} else {
 				console.log(pUnits);
-				distanceCell.textContent = backInUnits(d, pUnits).toFixed(2);
+				distanceCell.textContent = backInUnits(d, pUnits);
 				splitTime = backInTime(totalSeconds);
 			}
-			splitCell.textContent = `${splitTime[0]}:${splitTime[1]}:${splitTime[2]}`;
+			console.log(splitTime)
+			let time0 = splitTime[0];
+			let time1 = splitTime[1];
+			let time2 = splitTime[2];
+
+			if (time0 < 10) {
+				time0 = time0.toString()
+				time0 = "0" + time0
+			}
+			if (time1 < 10) {
+				time1 = time1.toString()
+				time1 = "0" + time1
+			}
+			if (time2 == "0.00") {
+				time2 = "00.00"
+			}
+			console.log(time2)
+			splitCell.textContent = `${time0}:${time1}:${time2}`;
 			// console.log(splitCell.textContent);
 			row.appendChild(distanceCell);
 			row.appendChild(splitCell);
